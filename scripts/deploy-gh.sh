@@ -1,6 +1,6 @@
 cd ..
 cd books
 git init
-git add .
+git add -A
 git commit -m 'deploy'
 git push -f git@github.com:Jokky6/books.git master

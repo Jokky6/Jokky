@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "37db8d660a297a1d608c29d96e21ad5c"
+    "revision": "1e7882bc833f904cf096f1a3c8b5a087"
   },
   {
-    "url": "assets/css/0.styles.ce815ecb.css",
-    "revision": "4f76694a84472f2dce5c382ea7e0ba35"
+    "url": "assets/css/0.styles.a8704607.css",
+    "revision": "a03254bf329f501725a70f75ae9261a1"
   },
   {
     "url": "assets/fonts/element-icons.6f0a7632.ttf",
@@ -80,16 +80,16 @@ self.__precacheManifest = [
     "revision": "f0ff94a1ec29dff8270b76cbe5db5a29"
   },
   {
-    "url": "assets/js/app.37d8fa30.js",
-    "revision": "c248f0bcdd99d0a8d07a096f2c931e95"
+    "url": "assets/js/app.d6df8673.js",
+    "revision": "02bbef1f257428c065c19ea2192bb1b8"
   },
   {
     "url": "e-books/index.html",
-    "revision": "81f48e2bf69c66086c05beda473fd544"
+    "revision": "5b36ecbfa9f2640e39ed4698a20e137a"
   },
   {
     "url": "index.html",
-    "revision": "d2e09f4f5cb9e9914db18e00bc2c62e6"
+    "revision": "894b63d9b6830537a0f3aac3b893bc92"
   },
   {
     "url": "left-logo.png",
