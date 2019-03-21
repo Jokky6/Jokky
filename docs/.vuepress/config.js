@@ -1,5 +1,5 @@
 module.exports = {
-  base:'/Jokky/',
+  base:'/Jokky/books/',
   dest: 'books',
   port: 8000,
   locales: {
