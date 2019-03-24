@@ -10,8 +10,8 @@
 .sidebar-button
   cursor pointer
   display none
-  width 1.25rem
-  height 1.25rem
+  width 50px
+  height 50px
   position absolute
   padding 0.6rem
   top 0.6rem
