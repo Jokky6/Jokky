@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "be0b8c1e7c26b9e02373ed7631da3e5f"
+    "revision": "8e3ee0adc068d7a9905c347502e7f8fb"
   },
   {
-    "url": "assets/css/0.styles.ce815ecb.css",
-    "revision": "4f76694a84472f2dce5c382ea7e0ba35"
+    "url": "assets/css/0.styles.fb7e6381.css",
+    "revision": "bfa120ebe55f69ea54d3cd03cc469e8a"
   },
   {
     "url": "assets/fonts/element-icons.6f0a7632.ttf",
@@ -76,20 +76,20 @@ self.__precacheManifest = [
     "revision": "a72efc5694c76596cfeb3d4bf8cb612c"
   },
   {
-    "url": "assets/js/8.3089f7cc.js",
+    "url": "assets/js/8.e648a73e.js",
     "revision": "f0ff94a1ec29dff8270b76cbe5db5a29"
   },
   {
-    "url": "assets/js/app.4a35b695.js",
-    "revision": "d42cc7c57631e1266f9569f596920fb2"
+    "url": "assets/js/app.1708a9a9.js",
+    "revision": "20418f1f5607fbb9b0df959a4adaa09d"
   },
   {
-    "url": "e-books/index.html",
-    "revision": "b1741e3f8d0a42a9c4c75f37dfda0101"
+    "url": "e-books/cms.html",
+    "revision": "351dd2951086e4677b1571c4971371ec"
   },
   {
     "url": "index.html",
-    "revision": "2280435af98a03e3ab7811130e5a643c"
+    "revision": "4bef97f9a95318fde9bbf67dd17912bb"
   },
   {
     "url": "left-logo.png",
