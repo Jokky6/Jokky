@@ -7,14 +7,14 @@
           class="image"
         >
         <div class="nickname">
-          <span class="nick">Jokky</span>
+          <span class="nick">Lin Books</span>
         </div>
         <div style="padding: 16px;" class="motto">
           <span>Welcome to My HomePage!</span>
         </div>
         <el-row class="funct-button" style="padding: 20px;">
-          <el-button round @click="openPage('https://github.com/hirCodd')">Github</el-button>
-          <el-button round @click="openPage('https://blog.csdn.net/HookJony')">CSDN</el-button>
+          <el-button round @click="openPage('https://github.com/TaleLin')">Github</el-button>
+          <el-button round @click="openPage('https://github.com/TaleLin')">林间有风官网</el-button>
         </el-row>
       </el-card>
     </div>
@@ -64,7 +64,7 @@ export default {
       "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
     font-weight: 700;
     font-size: 16px;
-    color: cadetblue;
+    color: #3683d6;
   }
 
   .image {

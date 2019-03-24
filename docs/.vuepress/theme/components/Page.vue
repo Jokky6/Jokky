@@ -58,7 +58,6 @@
     </div>
 
     <slot name="bottom"/>
-    <Comments v-bind:is="viewComments"></Comments>
   </main>
 </template>
 
