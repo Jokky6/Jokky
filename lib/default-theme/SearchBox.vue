@@ -11,7 +11,7 @@
            @keyup.enter="go(focusIndex)"
            @keyup.up="onUp"
            @keyup.down="onDown"
-           placeholder="请输入组件名称">
+           placeholder="请输入搜索关键字">
     <ul class="suggestions"
         v-if="showSuggestions"
         :class="{ 'align-right': alignRight }"
@@ -19,6 +19,7 @@
       <li class="suggestion"
           v-for="(s, i) in suggestions"
           :class="{ focused: i === focusIndex }"
+          :key="i"
           @mousedown="go(i)"
           @mouseenter="focus(i)">
         <a :href="s.path"
@@ -158,7 +159,7 @@ export default {
     color #C4C9D2
   input
     cursor text
-    width 250px
+    width auto
     height 36px
     color lighten($textColor, 25%)
     display inline-block

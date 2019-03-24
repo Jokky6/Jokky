@@ -94,7 +94,7 @@ function css (el, property) {
       cursor pointer
       height 38px
       // min-width 110px
-      margin-left 3.6vw
+      margin-left 18vw
       margin-top 21px
   .site-name
     font-size 1.3rem

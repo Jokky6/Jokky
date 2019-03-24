@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "56af89f4425b5b36cff142ea570ead4b"
+    "revision": "be0b8c1e7c26b9e02373ed7631da3e5f"
   },
   {
     "url": "assets/css/0.styles.ce815ecb.css",
@@ -80,16 +80,16 @@ self.__precacheManifest = [
     "revision": "f0ff94a1ec29dff8270b76cbe5db5a29"
   },
   {
-    "url": "assets/js/app.62fb27e5.js",
-    "revision": "7404490f7906066b79101d954f71a492"
+    "url": "assets/js/app.4a35b695.js",
+    "revision": "d42cc7c57631e1266f9569f596920fb2"
   },
   {
     "url": "e-books/index.html",
-    "revision": "417b216f9e251d476176d10b78a84268"
+    "revision": "b1741e3f8d0a42a9c4c75f37dfda0101"
   },
   {
     "url": "index.html",
-    "revision": "af45e2a7cd39882b5fb058bef4cc2814"
+    "revision": "2280435af98a03e3ab7811130e5a643c"
   },
   {
     "url": "left-logo.png",

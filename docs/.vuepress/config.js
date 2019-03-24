@@ -88,6 +88,10 @@ module.exports = {
             text: '介绍',
             link: '/'
           },
+          {
+            text:'Lin CMS',
+            link:'/e-books/cms'
+          }
         ],
         sidebar: {
         }
