@@ -114,7 +114,7 @@ export default {
       "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
     font-weight: 700;
     font-size: 16px;
-    color: cadetblue;
+    color: #3683d6;
   }
   .image {
     margin-top: 20px;
