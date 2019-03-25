@@ -33,12 +33,12 @@
       :class="{ open }"
       @click="$emit('toggle')"
     >
-      <span>{{ item.title }}</span>
       <span
         class="arrow"
         v-if="collapsable"
         :class="open ? 'down' : 'right'">
       </span>
+      <span>{{ item.title }}</span>
     </p>
 
     <DropdownTransition>
@@ -113,7 +113,7 @@ export default {
   .arrow
     position relative
     top -0.12em
-    left 0.5em
+    left 0em
   &.clickable
     &.active
       font-weight 600

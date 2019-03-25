@@ -1,9 +1,12 @@
 const path = require('path')
+const moment = require('moment')
 const container = require('markdown-it-container')
 
 module.exports = {
   base:'/books/',
   dest: 'books',
+  port:8000,
+  host:'0.0.0.0',
   title: "Lin Books",
   description: 'This is Lin books',
   head: [
@@ -38,15 +41,39 @@ module.exports = {
     ['@vuepress/google-analytics', {
       ga: 'UA-131334453-1'
     }],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          // 不要忘了安装 moment
+          const moment = require('moment')
+          moment.locale(lang)
+          return moment(timestamp).fromNow()
+        }
+      }
+    ]
   ],
   themeConfig: {
     repo: 'TaleLin',
     label: '简体中文',
     selectText: '选择语言',
+    avatar:'/hero.png',
     search:true,
+    lastUpdated: "上次更新",
+    editLinks:false,
     nav: require('./nav/index'),
     sidebar: {
-      
+      "/lin/lin-cms/start/": [
+        {
+          title: "前端入门",
+          children: [
+            "/lin/lin-cms/start/",
+            "frontend-demo",
+            "vue-client",
+            "backend-demo"
+          ]
+        },
+      ]
     }
   },
 }

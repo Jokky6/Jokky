@@ -9,6 +9,15 @@ module.exports = [
       {
         text:"Lin-UI",
         link:"/lin/lin-ui/"
+      },
+      {
+        text:"Other",
+        items:[
+          {
+            text: "Linux",
+            link:"/lin/Other/Linux/"
+          }
+        ]
       }
     ]
   },

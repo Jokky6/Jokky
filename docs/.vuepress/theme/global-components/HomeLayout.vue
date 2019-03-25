@@ -2,15 +2,15 @@
   <div class="home-main-page">
     <div class="cardpage" style="padding-bottom: 40px;">
       <el-card shadow="always" :body-style="{ padding: '0px' }" class="box-card">
-        <img
-          src="https://finen-1251602255.cos.ap-shanghai.myqcloud.com/blog/home/hero.png"
-          class="image"
-        >
+        <img class="image"
+           v-if="$site.themeConfig.avatar"
+           :src="$withBase($site.themeConfig.avatar)"
+           :alt="$siteTitle">
         <div class="nickname">
           <span class="nick">Lin Books</span>
         </div>
         <div style="padding: 16px;" class="motto">
-          <span>Welcome to My HomePage!</span>
+          <span>心上无垢，林间有风！</span>
         </div>
         <el-row class="funct-button" style="padding: 20px;">
           <el-button round @click="openPage('https://github.com/TaleLin')">Github</el-button>
@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style scoped>
-@media (min-width: 1200px) {
+@media (min-width: 1020px) {
   .cardpage {
     display: flex;
     align-items: center;

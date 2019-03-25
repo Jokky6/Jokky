@@ -868,7 +868,7 @@
   resolved "http://registry.npm.taobao.org/@vuepress/plugin-google-analytics/download/@vuepress/plugin-google-analytics-1.0.0-alpha.44.tgz#5fa4edc341cffc634804c6f72db076fd0bffc3c0"
   integrity sha1-X6Ttw0HP/GNIBMb3LbB2/Qv/w8A=
 
-"@vuepress/plugin-last-updated@^1.0.0-alpha.44":
+"@vuepress/plugin-last-updated@^1.0.0-alpha.42", "@vuepress/plugin-last-updated@^1.0.0-alpha.44":
   version "1.0.0-alpha.44"
   resolved "http://registry.npm.taobao.org/@vuepress/plugin-last-updated/download/@vuepress/plugin-last-updated-1.0.0-alpha.44.tgz#89349ad745439abbfb2ed411f5b0789234f9717d"
   integrity sha1-iTSa10VDmrv7LtQR9bB4kjT5cX0=
@@ -4996,6 +4996,11 @@ mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+moment@^2.24.0:
+  version "2.24.0"
+  resolved "http://registry.npm.taobao.org/moment/download/moment-2.24.0.tgz?cache=0&other_urls=http%3A%2F%2Fregistry.npm.taobao.org%2Fmoment%2Fdownload%2Fmoment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha1-DQVdU/UFKqZTyfbraLtdEr9cK1s=
 
 move-concurrently@^1.0.1:
   version "1.0.1"
