@@ -74,7 +74,7 @@ lin-cms-koa 实现的主要技术栈和特点：
 **想要深入了解这些项目的实现原理？请[前往](./lin/imooc/)**
 
 <p class="action">
-  <a href="/lin/lin-cms/start/" class="action-button">快速开始</a>
+  <a href="/books/lin/lin-cms/start/" class="action-button">快速开始</a>
 </p>
 
 <style>
