@@ -1,6 +1,6 @@
 <template>
   <div
-    class="theme-container"
+    class="theme-container container"
     :class="pageClasses"
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
@@ -56,7 +56,8 @@ export default {
 
   data () {
     return {
-      isSidebarOpen: false
+      isSidebarOpen: false,
+
     }
   },
 
@@ -145,3 +146,13 @@ export default {
 
 <style src="prismjs/themes/prism-tomorrow.css"></style>
 <style src="../styles/theme.styl" lang="stylus"></style>
+
+<style>
+ @media screen and (min-width: 959px){
+   .container{
+     width: 1140px;
+     margin: 0 auto;
+   }
+ }
+</style>
+
