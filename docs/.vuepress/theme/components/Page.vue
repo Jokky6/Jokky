@@ -215,6 +215,7 @@ function flatten (items, res) {
   display block
 
 .page-edit
+  max-width 1160px
   @extend $wrapper
   padding-top 4rem
   padding-bottom 1rem
