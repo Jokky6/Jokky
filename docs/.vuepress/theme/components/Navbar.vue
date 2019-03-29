@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import AlgoliaSearchBox from '@AlgoliaSearchBox'
+import AlgoliaSearchBox from '@theme/components/AlgoliaSearchBox.vue'
 import SearchBox from '@SearchBox'
 import SidebarButton from '@theme/components/SidebarButton.vue'
 import NavLinks from '@theme/components/NavLinks.vue'
@@ -107,7 +107,7 @@ $navbar-horizontal-padding = 1.5rem
   .links
     padding-left 1.5rem
     box-sizing border-box
-    background-color white
+    background-color #f0efe7
     white-space nowrap
     font-size 0.9rem
     position absolute
