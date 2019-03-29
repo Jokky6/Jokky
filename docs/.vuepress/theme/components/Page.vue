@@ -1,9 +1,9 @@
 <template>
   <main class="page">
     <slot name="top"/>
-    
-    <Content/>
-
+    <div class="main-page">
+      <Content/>
+    </div>
     <footer class="page-edit">
       <div
         class="edit-link"
@@ -63,10 +63,9 @@
 
 <script>
 import { resolvePage, normalize, outboundRE, endingSlashRE } from '../util'
-import Comments from './Comments.vue'
 export default {
   props: ['sidebarItems'],
-  components: {Comments},
+  components: {},
   data (){
     return {
       viewComments: 'Comments',
@@ -207,15 +206,20 @@ function flatten (items, res) {
 <style lang="stylus">
 @require '../styles/wrapper.styl'
 
+.main-page
+  position relative
+  top 3.6rem
+  background #fff
 .page
   padding-bottom 2rem
   display block
 
 .page-edit
   @extend $wrapper
-  padding-top 1rem
+  padding-top 4rem
   padding-bottom 1rem
   overflow auto
+  background: #fff
   .edit-link
     display inline-block
     a
@@ -235,6 +239,8 @@ function flatten (items, res) {
   @extend $wrapper
   padding-top 1rem
   padding-bottom 0
+  padding-bottom: 2rem
+  background #fff
   .inner
     min-height 2rem
     margin-top 0
