@@ -322,3 +322,5 @@ def get_books():
 
 后端开发完成！[移步前端部分？](./frontend-demo.md)
 
+<RightMenu/>
+

@@ -95,3 +95,5 @@ python add_super.py
 
 如果你安装时遇到问题，那么尝试看看[常见问题汇总](../server/questions.md)，看能否解决，或者去我们的 github 仓库看 issue。如果没有出现你的问题，请给我们提 issue。
 
+<RightMenu/>
+

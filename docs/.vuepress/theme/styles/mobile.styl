@@ -5,17 +5,17 @@ $mobileSidebarWidth = $sidebarWidth * 0.82
 // narrow desktop / iPad
 @media (max-width: $MQNarrow)
   .sidebar
-    font-size 15px
-    width $mobileSidebarWidth
+    font-size 14px
+    width $mobileSidebarWidth - 6.4rem
   .page
-    padding-left $mobileSidebarWidth
+    padding-left $mobileSidebarWidth - 6.4rem
 
 // wide mobile
 @media (max-width: $MQMobile)
   .sidebar
     top 0
     padding-top $navbarHeight
-    background #162557
+    background #3683d6
     transform translateX(-100%)
     transition transform .2s ease
   .page

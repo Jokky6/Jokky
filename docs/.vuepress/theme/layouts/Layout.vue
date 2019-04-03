@@ -52,7 +52,7 @@ import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
 
 export default {
-  components: { Home, Page, Sidebar, Navbar },
+  components: { Home, Page, Sidebar, Navbar},
 
   data () {
     return {
@@ -150,7 +150,7 @@ export default {
 <style>
  @media screen and (min-width: 959px){
    .container{
-     width: 1140px;
+     width: 959px;
      margin: 0 auto;
    }
  }

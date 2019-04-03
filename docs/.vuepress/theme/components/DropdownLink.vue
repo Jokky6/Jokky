@@ -111,7 +111,7 @@ export default {
         &:hover
           color $accentColor
         &.router-link-active
-          color $accentColor
+          color $wrapperText
           &::after
             content ""
             width 0
@@ -168,7 +168,7 @@ export default {
       position absolute
       top 100%
       right 0
-      background-color #162557
+      background-color #3683d6
       padding 0.6rem 0
       border 1px solid #ddd
       border-bottom-color #ccc

@@ -59,3 +59,5 @@ npm rebuild node-sass
 
 **接下来我们来完成一个简单的 [Demo](./frontend-demo.md) 帮助开发者更快的熟悉 Lin。**
 
+<RightMenu/>
+

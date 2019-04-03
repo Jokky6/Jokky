@@ -3,12 +3,11 @@
     <slot name="top"/>
     <div class="main-page">
       <Content/>
-    </div>
-    <footer class="page-edit">
-      <div
+      <footer class="page-edit">
+       <div
         class="edit-link"
         v-if="editLink"
-      >
+       >
         <a
           :href="editLink"
           target="_blank"
@@ -55,8 +54,8 @@
           →
         </span>
       </p>
+     </div>
     </div>
-
     <slot name="bottom"/>
   </main>
 </template>
