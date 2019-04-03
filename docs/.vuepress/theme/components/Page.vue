@@ -1,20 +1,21 @@
 <template>
-  <main class="page">
-    <slot name="top"/>
-    <div class="main-page">
-      <Content/>
-      <footer class="page-edit">
-       <div
-        class="edit-link"
-        v-if="editLink"
-       >
-        <a
-          :href="editLink"
-          target="_blank"
-          rel="noopener noreferrer"
-        >{{ editLinkText }}</a>
-        <OutboundLink/>
-      </div>
+  <div class="page-container">
+    <main class="page">
+      <slot name="top"/>
+        <div class="main-page">
+          <Content/>
+          <footer class="page-edit">
+            <div
+              class="edit-link"
+              v-if="editLink"
+            >
+            <a
+              :href="editLink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >{{ editLinkText }}</a>
+            <OutboundLink/>
+        </div>
 
       <div
         class="last-updated"
@@ -23,7 +24,7 @@
         <span class="prefix">{{ lastUpdatedText }}: </span>
         <span class="time">{{ lastUpdated }}</span>
       </div>
-    </footer>
+      </footer>
 
     <div class="page-nav" v-if="prev || next">
       <p class="inner">
@@ -58,6 +59,7 @@
     </div>
     <slot name="bottom"/>
   </main>
+  </div>
 </template>
 
 <script>

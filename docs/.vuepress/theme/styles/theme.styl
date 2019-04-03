@@ -18,6 +18,7 @@ body
 
 .page
   padding-left $sidebarWidth - 8rem
+  padding-right $sidebarWidth - 8rem
 
 .navbar
   position absolute
@@ -26,7 +27,7 @@ body
   left 0
   right 0
   height $navbarHeight
-  background-color #3683d6
+  background-color $navBgColor
   box-sizing border-box
   border-bottom 1px solid $borderColor
 
@@ -179,5 +180,6 @@ th, td
       display none
     .page
       padding-left 0
+      padding-right 0
 
 @require 'mobile.styl'
