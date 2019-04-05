@@ -63,17 +63,19 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+ @media screen and (max-width :1150px)
+    .rightMenu-container
+      display none
+
 .rightMenu-container
   position absolute
   padding: 1.5rem 0;
   padding-left 50px
   top 1.6rem
-  right -25%
+  right -30%
   width 150px
   font-size 14px
   padding-right 30px
-  @media screen and (min-width: 600px)
-    right -35%
   .rightMenuWrapper
     position fixed
   li

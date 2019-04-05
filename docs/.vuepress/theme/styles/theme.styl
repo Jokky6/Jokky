@@ -17,8 +17,8 @@ body
   color $textColor
 
 .page
-  padding-left $sidebarWidth - 14rem
-  padding-right $sidebarWidth - 14rem
+  padding-left $sidebarWidth
+  padding-right $sidebarWidth
 
 .navbar
   position absolute
@@ -43,10 +43,10 @@ body
 
 .sidebar
   font-size 16px
-  width $sidebarWidth - 8rem
+  width 249px
   position fixed
   z-index 10
-  margin-left -6rem
+  margin-left - $sidebarWidth
   top $navbarHeight
   bottom 0
   box-sizing border-box

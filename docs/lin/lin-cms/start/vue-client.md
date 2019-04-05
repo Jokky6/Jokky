@@ -61,3 +61,7 @@ npm rebuild node-sass
 
 <RightMenu/>
 
+::: slot author
+<Author job="web前端"/>
+:::
+

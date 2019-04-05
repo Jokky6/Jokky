@@ -19,7 +19,9 @@
       <slot
         name="sidebar-top"
         slot="top"
-      />
+      >
+        <Content slot-key="author"/>
+      </slot>
       <slot
         name="sidebar-bottom"
         slot="bottom"
@@ -148,9 +150,15 @@ export default {
 <style src="../styles/theme.styl" lang="stylus"></style>
 
 <style>
+@media screen and(min-width:1150px)and(max-width: 959px){
+    .container{
+     max-width: 959px;
+     margin: 0 auto;
+   }
+}
  @media screen and (min-width: 959px){
    .container{
-     width: 959px;
+     max-width: 959px;
      margin: 0 auto;
    }
  }

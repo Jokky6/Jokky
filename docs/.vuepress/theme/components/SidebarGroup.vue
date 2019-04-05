@@ -100,8 +100,7 @@ export default {
   color $textColor
   transition color .15s ease
   cursor pointer
-  font-size 1.1em
-  font-weight bold
+  font-size 16px
   // text-transform uppercase
   padding 0.35rem 1.5rem 0.35rem 1.25rem
   width 100%
@@ -109,7 +108,10 @@ export default {
   margin 0
   border-left 0.25rem solid transparent
   &.open, &:hover
-    color inherit
+    color #3683d6
+    background-color #e4f1ff
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
   .arrow
     position relative
     top -0.12em

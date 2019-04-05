@@ -324,3 +324,7 @@ def get_books():
 
 <RightMenu/>
 
+::: slot author
+<Author name="pedro" job="全栈工程师"/>
+:::
+

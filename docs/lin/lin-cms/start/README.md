@@ -97,3 +97,6 @@ python add_super.py
 
 <RightMenu/>
 
+::: slot author
+<Author name="Tom" job="全栈工程师" />
+:::
