@@ -28,7 +28,6 @@ export default {
     .author-container
         display flex
         flex-direction row
-        margin-top 1.5rem
         padding .8rem .4rem
         background #fff
         .avatar

@@ -21,7 +21,7 @@ body
   padding-right $sidebarWidth
 
 .navbar
-  position absolute
+  position fixed
   z-index 20
   top 0
   left 0
@@ -43,14 +43,13 @@ body
 
 .sidebar
   font-size 16px
-  width 249px
+  width 248px
   position fixed
   z-index 10
   margin-left - $sidebarWidth
-  top $navbarHeight
+  top 5rem
   bottom 0
   box-sizing border-box
-  border-right 1px solid $borderColor
   overflow-y auto
 
 .content:not(.custom)

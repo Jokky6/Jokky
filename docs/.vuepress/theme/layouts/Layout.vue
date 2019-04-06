@@ -5,8 +5,9 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
   >
-    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />
-
+  <transition name="fade" >
+    <Navbar v-show="isShowNav" v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
+  </transition>
     <div
       class="sidebar-mask"
       @click="toggleSidebar(false)"
@@ -59,7 +60,8 @@ export default {
   data () {
     return {
       isSidebarOpen: false,
-
+      isShowNav:true,
+      clientWidth:''
     }
   },
 
@@ -80,7 +82,6 @@ export default {
         || this.$themeLocaleConfig.nav
       )
     },
-
     shouldShowSidebar () {
       const { frontmatter } = this.$page
       return (
@@ -113,12 +114,32 @@ export default {
   },
 
   mounted () {
+    window.addEventListener('scroll', this.handleScroll,true)
+    ,   
+    // 此处监听浏览器窗口
+    this.screenWidth = document.body.clientWidth
+    window.onresize = () => {
+        return (() => {
+          this.screenWidth = document.body.clientWidth;
+        })();
+      }
+    ,
     this.$router.afterEach(() => {
       this.isSidebarOpen = false
     })
   },
 
   methods: {
+    // 监听滚动条
+    handleScroll() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      if(scrollTop>=100&&this.screenWidth>=720){
+        return this.isShowNav = false
+      }else{
+        return this.isShowNav = true
+      }
+    }
+    ,
     toggleSidebar (to) {
       this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
     },
@@ -150,6 +171,12 @@ export default {
 <style src="../styles/theme.styl" lang="stylus"></style>
 
 <style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to{
+  opacity: 0;
+}
 @media screen and(min-width:1150px)and(max-width: 959px){
     .container{
      max-width: 959px;

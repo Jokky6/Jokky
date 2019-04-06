@@ -209,7 +209,7 @@ function flatten (items, res) {
 
 .main-page
   position relative
-  top 3.6rem
+  top 6.5rem
   background #fff
 .page
   padding-bottom 2rem
