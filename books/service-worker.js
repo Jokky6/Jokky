@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "0ebeea79acdce714372e8b84669b14ac"
+    "revision": "7045932c458a596eb48a918839a597f3"
   },
   {
-    "url": "assets/css/0.styles.8c8162b1.css",
-    "revision": "b86669584ca5e542e8012f9465660f56"
+    "url": "assets/css/0.styles.d69413b7.css",
+    "revision": "3b1b52cb71d218be7c02f0621cf860e0"
   },
   {
     "url": "assets/fonts/element-icons.6f0a7632.ttf",
@@ -100,8 +100,8 @@ self.__precacheManifest = [
     "revision": "2a8d49697432b95ec6046498931cf654"
   },
   {
-    "url": "assets/js/app.2367e94a.js",
-    "revision": "a8733384beb8153e74e70fa4ecf40f65"
+    "url": "assets/js/app.0dfb8267.js",
+    "revision": "7fd408bc06428c441674bd6c4146b764"
   },
   {
     "url": "assets/js/vendors~docsearch.ab216e72.js",
@@ -157,35 +157,35 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "87b2a5ad2c88f5039e984571d33ced78"
+    "revision": "95278cc3fb0511c0d313fc7aa118f505"
   },
   {
     "url": "lin/lin-cms/index.html",
-    "revision": "10c6d81496d9fe657da5874af3374527"
+    "revision": "a72d611b50225589e0eadd856ec0dbd6"
   },
   {
     "url": "lin/lin-cms/start/backend-demo.html",
-    "revision": "589f919f7a3d655fb1c2003b781a55db"
+    "revision": "98b5d20ce057055fab775654c7903c26"
   },
   {
     "url": "lin/lin-cms/start/frontend-demo.html",
-    "revision": "252b5963495699c86c6476e174f37f75"
+    "revision": "77b395c9ccab3eb6c4f4707c7541d7f3"
   },
   {
     "url": "lin/lin-cms/start/index.html",
-    "revision": "a7828fd0d671690b5dcc64f402201829"
+    "revision": "f2f447be0672a44c5198c38fa487e65f"
   },
   {
     "url": "lin/lin-cms/start/vue-client.html",
-    "revision": "00ced807288b4c57cd147e864228b5c6"
+    "revision": "9abd2ab49700e50734724f624699de6b"
   },
   {
     "url": "lin/lin-ui/index.html",
-    "revision": "b2935ae5aa71ab898f0fcc66d9cb6d0f"
+    "revision": "495b12e95668ef9f66b04d541d74e5aa"
   },
   {
     "url": "lin/Other/Linux/index.html",
-    "revision": "1706f87ceb9588718cc37c10db092cae"
+    "revision": "7621265e87d7cb4cc8441e9907e0ed07"
   },
   {
     "url": "logo.png",

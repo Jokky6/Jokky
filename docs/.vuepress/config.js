@@ -54,7 +54,7 @@ module.exports = {
     ]
   ],
   themeConfig: {
-    repo: 'TaleLin',
+    repo: undefined,
     label: '简体中文',
     selectText: '选择语言',
     avatar:'/hero.png',

@@ -1,24 +1,18 @@
 module.exports = [
   {
-    text: "Books",
-    items: [
-      {
-        text:"Lin-CMS",
-        link:"/lin/lin-cms/"
-      },
-      {
-        text:"Lin-UI",
-        link:"/lin/lin-ui/"
-      },
-      {
-        text:"Other",
-        items:[
-          {
-            text: "Linux",
-            link:"/lin/Other/Linux/"
-          }
-        ]
-      }
-    ]
+    text:"主页" ,
+    link:"/"
   },
+  {
+    text: "Lin-CMS",
+    link:"/lin/lin-cms/"
+  },
+  {
+    text:"Lin-UI",
+    link:"/lin/lin-ui/"
+  },
+  {
+    text:"其它",
+    link:"/lin/Other/"
+  }
 ]
