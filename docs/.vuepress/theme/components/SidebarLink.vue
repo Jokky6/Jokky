@@ -65,7 +65,7 @@ function renderLink (h, to, text, active) {
   }, text)
 }
 
-function renderChildren (h, children, path, route, maxDepth, depth = 2) {
+function renderChildren (h, children, path, route, maxDepth, depth = 1) {
   console.log(depth)
   if (!children || depth > maxDepth) return null
   return h('ul', { class: 'sidebar-sub-headers' }, children.map(c => {

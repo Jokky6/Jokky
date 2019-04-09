@@ -195,7 +195,6 @@ l-icon是lin 内置的一组字体图标，它还有很多的可选项，我们�
 只有在image元素上才设置有postId，从currentTarget（swipier）元素中是无法获取到postId的，所以我们必须使用event.target来获取postId。
 保存并运行代码，发现点击swiper组件的不同图片可以跳转到对应的文章详情页面。
 
-<RightMenu />
 
 
 
