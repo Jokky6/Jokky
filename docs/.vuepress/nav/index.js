@@ -5,6 +5,6 @@ module.exports = [
   },
   {
     text: "Lin-ui",
-    link:"/lin/lin-ui/eleven"
+    link:"/lin/lin-ui/tutorial/"
   },
 ]

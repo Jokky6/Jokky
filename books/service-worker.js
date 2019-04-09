@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "925a9c92f706a5df039edcf9d4c90766"
+    "revision": "3817ff2f8cda33230d77310a70430b81"
   },
   {
-    "url": "assets/css/0.styles.114a7fc4.css",
-    "revision": "21c341f6c51f2641e901286465d745f4"
+    "url": "assets/css/0.styles.2a678f92.css",
+    "revision": "5ceac28b4de426fd6e135128a84b1722"
   },
   {
     "url": "assets/fonts/element-icons.6f0a7632.ttf",
@@ -40,16 +40,16 @@ self.__precacheManifest = [
     "revision": "4e992f728097fc8cfc729b8b910e5b73"
   },
   {
-    "url": "assets/js/11.a414be14.js",
-    "revision": "20028490c16d8ccaa690ae3f2c31785d"
+    "url": "assets/js/11.d5071058.js",
+    "revision": "d5c91c821274511c719a5a50b84b2dff"
   },
   {
-    "url": "assets/js/12.0600b764.js",
-    "revision": "f78e71eb015046be79f353e1d4237fca"
+    "url": "assets/js/12.021f8108.js",
+    "revision": "eafa0bca25e322e17b849540aec64f74"
   },
   {
-    "url": "assets/js/13.315663cf.js",
-    "revision": "93d4f4d8324beca6df8c2234a22e0978"
+    "url": "assets/js/13.05ba918c.js",
+    "revision": "17724455acf1d0b1a36f357d42ed2f55"
   },
   {
     "url": "assets/js/14.d4e56aa0.js",
@@ -84,8 +84,8 @@ self.__precacheManifest = [
     "revision": "34c4c898ac8dd97536dc8b2ea3796883"
   },
   {
-    "url": "assets/js/app.d176ac16.js",
-    "revision": "b286a64f04da2a2915710e43d2082b62"
+    "url": "assets/js/app.a5388080.js",
+    "revision": "4283523c54753e5c3f0bce1c628a2102"
   },
   {
     "url": "assets/js/vendors~docsearch.408a77b9.js",
@@ -141,19 +141,19 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "4541003213adf3a32b89d13ea6e12494"
-  },
-  {
-    "url": "lin/lin-ui/eleven/eleven.html",
-    "revision": "6ca05b044a27fc65a48bd8c88b1215f1"
-  },
-  {
-    "url": "lin/lin-ui/eleven/index.html",
-    "revision": "d3dfb09b4b3ea705416736df5b3c18a4"
+    "revision": "7eae957082a6ded9bd0d87f99a0df45e"
   },
   {
     "url": "lin/lin-ui/index.html",
-    "revision": "46ff191b5fb1ba8e8e10291517ff6863"
+    "revision": "ced440e203cdbdb5bb4e3404f1870fff"
+  },
+  {
+    "url": "lin/lin-ui/tutorial/eleven.html",
+    "revision": "97ef8fe85890353bf1b670a8bcc868bb"
+  },
+  {
+    "url": "lin/lin-ui/tutorial/index.html",
+    "revision": "7c4ed637525cef5a6b760b196d181dfb"
   },
   {
     "url": "logo.png",

@@ -69,8 +69,8 @@ module.exports = {
         {
           title: "小程序入门与入门",
           children: [
-            "/lin/lin-ui/eleven/",
-            "eleven/eleven"
+            "/lin/lin-ui/tutorial/",
+            "tutorial/eleven"
           ]
         },
       ]
