@@ -111,7 +111,7 @@ $navbar-horizontal-padding = 1.5rem
     white-space nowrap
     font-size 0.9rem
     position absolute
-    right $navbar-horizontal-padding
+    right 5rem
     top $navbar-vertical-padding
     display flex
     .search-box

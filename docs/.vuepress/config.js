@@ -63,14 +63,12 @@ module.exports = {
     editLinks:false,
     nav: require('./nav/index'),
     sidebar: {
-      "/lin/lin-cms/start/": [
+      "/lin/lin-ui/": [
         {
-          title: "前端入门",
+          title: "小程序入门与入门",
           children: [
-            "/lin/lin-cms/start/",
-            "frontend-demo",
-            "vue-client",
-            "backend-demo"
+            "/lin/lin-ui/eleven/",
+            "eleven/eleven"
           ]
         },
       ]
