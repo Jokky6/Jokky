@@ -5,7 +5,7 @@
                 :key="index">
                 <a :href="item"
                     :id="item"
-                    :class="{active: item === activeClass}">{{item.slice(1)}}
+                    :class="{active: item === activeClass}">{{item.slice(7)}}
         </a>
       </li>
     </ul>
@@ -54,9 +54,9 @@ export default {
   },
   mounted () {
     setTimeout(this.initTitle, 100)
-    const _this = this
+    const self = this
     window.onresize = function temp () {
-      _this.initTitle()
+      self.initTitle()
     }
   }
 }

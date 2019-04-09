@@ -28,6 +28,7 @@
     </router-link>
 
     <p
+      v-show="false"
       v-else
       class="sidebar-heading"
       :class="{ open }"
