@@ -66,7 +66,6 @@ function renderLink (h, to, text, active) {
 }
 
 function renderChildren (h, children, path, route, maxDepth, depth = 1) {
-  console.log(depth)
   if (!children || depth > maxDepth) return null
   return h('ul', { class: 'sidebar-sub-headers' }, children.map(c => {
     const active = isActive(route, path + '#' + c.slug)
@@ -100,11 +99,16 @@ a.sidebar-link
     color $accentColor
     border-left-color $accentColor
   .sidebar-group &
-    padding-left 4rem
+    padding-left 0
+    font-size 15px
+    overflow hidden
+    text-overflow ellipsis
+    white-space nowrap
   .sidebar-sub-headers &
+    font-size 14px
     padding-top 0.25rem
     padding-bottom 0.25rem
     border-left none
     &.active
-      font-weight 500
+      font-weight 400
 </style>
