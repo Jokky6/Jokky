@@ -63,6 +63,7 @@ module.exports = {
     editLinks:false,
     nav: require('./nav/index'),
     navbar: true,
+    displayAllHeaders: true,
     activeHeaderLinks:true,
     sidebar: {
       "/lin/lin-ui/": [
