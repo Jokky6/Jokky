@@ -101,6 +101,7 @@ a.sidebar-link
   .sidebar-group &
     padding-left 0
     font-size 15px
+    font-weight 600
     overflow hidden
     text-overflow ellipsis
     white-space nowrap
@@ -108,6 +109,7 @@ a.sidebar-link
     font-size 14px
     padding-top 0.25rem
     padding-bottom 0.25rem
+    font-weight 400
     border-left none
     &.active
       font-weight 400
