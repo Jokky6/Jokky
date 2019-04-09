@@ -177,9 +177,9 @@ export default {
 .fade-enter, .fade-leave-to{
   opacity: 0;
 }
- @media screen and (min-width: 959px){
+ @media screen and (min-width: 1100px){
    .container{
-     max-width: 959px;
+     max-width: 1050px;
      margin: 0 auto;
    }
  }
