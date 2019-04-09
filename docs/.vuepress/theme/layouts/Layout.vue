@@ -179,7 +179,7 @@ export default {
 }
  @media screen and (min-width: 1100px){
    .container{
-     max-width: 1050px;
+     max-width: 1100px;
      margin: 0 auto;
    }
  }
