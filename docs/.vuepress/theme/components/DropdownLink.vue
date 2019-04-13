@@ -85,7 +85,7 @@ export default {
       border-color transparent
     .arrow
       vertical-align middle
-      margin-top -1px
+      margin-top -3px
       margin-left 0.4rem
   .nav-dropdown
     .dropdown-item
@@ -154,9 +154,8 @@ export default {
       display block !important
     .dropdown-title .arrow
       // make the arrow always down at desktop
-      border-left 4px solid transparent
-      border-right 4px solid transparent
-      border-top 6px solid $arrowBgColor
+      border-right 1px solid $arrowBgColor
+      border-top 1px solid $arrowBgColor
       border-bottom 0
     .nav-dropdown
       display none
@@ -168,7 +167,7 @@ export default {
       position absolute
       top 100%
       right 0
-      background-color $navBgColor
+      background-color $DropdownBgColor
       padding 0.6rem 0
       border 1px solid #ddd
       border-bottom-color #ccc

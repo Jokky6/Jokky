@@ -14,7 +14,6 @@
         </div>
         <el-row class="funct-button" style="padding: 20px;">
           <el-button round @click="openPage('https://github.com/TaleLin')">Github</el-button>
-          <el-button round @click="openPage('https://github.com/TaleLin')">林间有风官网</el-button>
         </el-row>
       </el-card>
     </div>
