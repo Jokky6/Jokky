@@ -58,6 +58,7 @@ module.exports = {
     label: '简体中文',
     selectText: '选择语言',
     avatar:'/hero.png',
+    leftLogo:'/left-logo.png',
     search:true,
     lastUpdated: "上次更新",
     editLinks:false,

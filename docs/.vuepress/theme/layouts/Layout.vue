@@ -6,13 +6,12 @@
     @touchend="onTouchEnd"
   >
   <transition name="fade" >
-    <Navbar v-show="isShowNav" v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
+    <Navbar :class="pageClasses"   v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
   </transition>
     <div
       class="sidebar-mask"
       @click="toggleSidebar(false)"
     ></div>
-
     <Sidebar
       :items="sidebarItems"
       @toggle-sidebar="toggleSidebar"
@@ -21,7 +20,15 @@
         name="sidebar-top"
         slot="top"
       >
-        <Content slot-key="author"/>
+        <div
+          class="logo"
+          v-if="$site.themeConfig.leftLogo"
+        >
+          <img 
+           class="image"
+           :src="$withBase($site.themeConfig.leftLogo)"
+           :alt="$siteTitle">
+        </div>
       </slot>
       <slot
         name="sidebar-bottom"
@@ -114,8 +121,6 @@ export default {
   },
 
   mounted () {
-    window.addEventListener('scroll', this.handleScroll,true)
-    ,   
     // 此处监听浏览器窗口
     this.screenWidth = document.body.clientWidth
     window.onresize = () => {
@@ -130,16 +135,6 @@ export default {
   },
 
   methods: {
-    // 监听滚动条
-    handleScroll() {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-      if(scrollTop>=100&&this.screenWidth>=720){
-        return this.isShowNav = false
-      }else{
-        return this.isShowNav = true
-      }
-    }
-    ,
     toggleSidebar (to) {
       this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
     },
@@ -171,12 +166,20 @@ export default {
 <style src="../styles/theme.styl" lang="stylus"></style>
 
 <style>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+
+.logo {
+  width: 100%;
+  height: 3.6rem;
+  position: relative;
 }
-.fade-enter, .fade-leave-to{
-  opacity: 0;
+
+.image{
+  width: 90px;
+  position: absolute;
+  top:25%;
+  left: 25%;
 }
+
  @media screen and (min-width: 1030px){
    .container{
      max-width: 1030px;

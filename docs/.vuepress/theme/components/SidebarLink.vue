@@ -80,7 +80,7 @@ function renderChildren (h, children, path, route, maxDepth, depth = 1) {
 
 <style lang="stylus">
 .sidebar .sidebar-sub-headers
-  padding-left 1rem
+  padding-left 0
   font-size 0.95em
 
 a.sidebar-link
@@ -99,7 +99,7 @@ a.sidebar-link
     color $accentColor
     border-left-color $accentColor
   .sidebar-group &
-    padding-left 0
+    padding-left 1rem
     font-size 15px
     font-weight 600
     overflow hidden
@@ -113,4 +113,5 @@ a.sidebar-link
     border-left none
     &.active
       font-weight 400
+      background #d6e8fb
 </style>

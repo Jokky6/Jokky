@@ -41,12 +41,16 @@ export default {
       padding 0.5rem 0 0.5rem 1.5rem
   & > .sidebar-links
     padding 1.5rem 0
+    padding-left 1.5rem
+    height: calc(100% - 7.2rem)
+    overflow-y auto
     & > li > a.sidebar-link
       font-size 1.1em
       line-height 1.7
       font-weight bold
     & > li:not(:first-child)
       margin-top .75rem
+    
 
 @media (max-width: $MQMobile)
   .sidebar

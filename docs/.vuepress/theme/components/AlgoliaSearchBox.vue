@@ -7,7 +7,7 @@
     <input
       id="algolia-search-input"
       class="search-query"
-    >
+    />
   </form>
 </template>
 
