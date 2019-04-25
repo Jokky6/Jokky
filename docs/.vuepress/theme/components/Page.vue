@@ -211,6 +211,7 @@ function flatten (items, res) {
   position relative
   top 6.5rem
   background #fff
+  box-shadow:2px 2px 18px 0px rgba(199,204,215,0.5)
 .page
   padding-bottom 2rem
   display block
