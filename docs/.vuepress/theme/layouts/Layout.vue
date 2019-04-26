@@ -179,14 +179,14 @@ export default {
 .logo {
   width: 100%;
   height: 4.5rem;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center; 
 }
 
 .image{
   width: 110px;
-  position: absolute;
-  top:25%;
-  left: 30%;
 }
 
 .author{
