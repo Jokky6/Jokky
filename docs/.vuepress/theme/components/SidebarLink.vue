@@ -100,7 +100,7 @@ a.sidebar-link
     border-left-color $accentColor
   .sidebar-group &
     padding-left 1rem
-    font-size 15px
+    font-size 16px
     font-weight 600
     overflow hidden
     text-overflow ellipsis
