@@ -26,30 +26,30 @@ export default {
 
 <style lang="stylus" scoped>
     .author-container
+        width 100%
         display flex
-        flex-direction row
-        padding .8rem .4rem
-        background #fff
+        flex-direction column
+        justify-content center
+        align-items center
         .avatar
-            width 80px
-            height 80px
+            
+            width 88px
+            height 88px
             border-radius 50%
+            border:3px solid rgba(255,255,255,1);
             cursor pointer
         .author-info
-            display flex
-            flex-direction column
-            width 60%
-            margin-top -15px
-            align-items center
-            align-self center
-            .name
-                font-size 16px
-                color $textColor
-            .job
-                font-size 14px
-                margin-top -15px
-                color #777
-
+            display inline
+            p
+                color #333
+                margin-bottom 0
+                text-align center
+                line-height 22px
+            span 
+                color #999
+                font-size 12px
+                line-height 17px
+        
             
 </style>
 

@@ -27,7 +27,16 @@
           <img 
            class="image"
            :src="$withBase($site.themeConfig.leftLogo)"
-           :alt="$siteTitle">
+           :alt="$siteTitle" />
+        </div>
+      </slot>
+      <slot
+        name="silder-info"
+        slot="info"
+      >
+        <div class="info-container">
+            <Content slot-key="author"/>
+            <Content slot-key="advertisement-top"/>
         </div>
       </slot>
       <slot
@@ -177,8 +186,19 @@ export default {
   width: 110px;
   position: absolute;
   top:25%;
-  left: 25%;
+  left: 30%;
 }
+
+.author{
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  padding: 0 !important;
+}
+
+.advertisement-top{
+  margin-top: 20px !important;
+}
+
 
  @media screen and (min-width: 1030px){
    .container{

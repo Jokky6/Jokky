@@ -2,6 +2,7 @@
   <aside class="sidebar">
     <NavLinks/>
     <slot name="top"/>
+    <slot name="info"/>
     <SidebarLinks :depth="0" :items="items"/>
     <slot name="bottom"/>
   </aside>
@@ -40,9 +41,10 @@ export default {
       font-size 1.1em
       padding 0.5rem 0 0.5rem 1.5rem
   & > .sidebar-links
+    border-top 2px dashed rgba(222,226,230,1)
     padding 1.5rem 0
     padding-left 1.5rem
-    height: calc(100% - 7.2rem)
+    height: calc(100%- 36rem)
     overflow-y auto
     & > li > a.sidebar-link
       font-size 1.1em
