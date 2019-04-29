@@ -354,7 +354,7 @@ show、hide等都是Page页面的生命周期函数。
 有了以上的组件基本概念后，我们就开始后续项目的开发了。组件还有一些很重要的特性，我们还没有讲解到，比如：自定义事件、外部样式类等。别着急，还是我之前的观点，将知识放在应用中学习是最好的学习方式，我们后面章节见！
 
 ::: slot author
-  <Author name="Kitty" job="某云网技术总监"/>
+  <Author name="Kitty" job="某云网技术总监" title="微信小程序开发与实战"/>
 :::
 
 ::: slot advertisement-top

@@ -57,6 +57,7 @@ module.exports = {
     repo: undefined,
     label: '简体中文',
     selectText: '选择语言',
+    more:'/more.png',
     avatar:'/hero.png',
     leftLogo:'/left-logo.png',
     search:true,
@@ -64,7 +65,7 @@ module.exports = {
     editLinks:false,
     nav: require('./nav/index'),
     navbar: true,
-    displayAllHeaders: true,
+    displayAllHeaders: false,
     activeHeaderLinks:true,
     sidebar: {
       "/lin/lin-ui/": [

@@ -197,12 +197,14 @@ export default {
 
 .advertisement-top{
   margin-top: 20px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
 }
 
 
- @media screen and (min-width: 1030px){
+ @media screen and (min-width: 1250px){
    .container{
-     max-width: 1030px;
+     max-width: 1250px;
      margin: 0 auto;
    }
  }

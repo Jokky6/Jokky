@@ -5,6 +5,7 @@
             <p class="name" :name="name">{{name}}</p>
             <span class="job" :job="job">{{job}}</span>
         </div>
+        <p class="book-name" :title="title">{{title}}</p>
     </div>
 </template>
 
@@ -19,7 +20,11 @@ export default {
             type:String,
             default:'../../../hero.png'
         },
-        job:String
+        job:String,
+        title:{
+            type:String,
+            default:'未知书名'
+        }
     }
 }
 </script>
@@ -49,6 +54,15 @@ export default {
                 color #999
                 font-size 12px
                 line-height 17px
+        .book-name
+            font-size 14px
+            line-height 20px
+            color #3683D6
+            font-weight 500
+            font-family PingFangSC-Medium
+            margin-top 20px
+            margin-bottom 0 !important
+            cursor pointer
         
             
 </style>

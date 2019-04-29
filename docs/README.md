@@ -1,4 +1,4 @@
 ---
+navbar: false
 ---
-<div style="height:3px"></div>
-<HomeLayout/>
+# 林间有风
