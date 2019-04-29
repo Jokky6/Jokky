@@ -104,10 +104,10 @@ $navbar-horizontal-padding = 1.5rem
       vertical-align top
   .more
     position relative
-    width 40px
-    height 40px
-    top .25rem
-    left 3rem
+    width 32px
+    height 32px
+    top .55rem
+    left 2.9rem
     border-radius 50%
     box-shadow 0px 0px 14px 0px rgba(207,207,207,0.5)
     cursor pointer
