@@ -202,9 +202,9 @@ export default {
 }
 
 
- @media screen and (min-width: 1250px){
+ @media screen and (min-width: 1150px){
    .container{
-     max-width: 1250px;
+     max-width: 1150px;
      margin: 0 auto;
    }
  }
