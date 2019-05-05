@@ -2,8 +2,10 @@
   <aside class="sidebar">
     <NavLinks/>
     <slot name="top"/>
-    <slot name="info"/>
-    <SidebarLinks :depth="0" :items="items"/>
+    <div class="center">
+      <slot name="info"/>
+      <SidebarLinks :depth="0" :items="items"/>
+    </div>
     <slot name="bottom"/>
   </aside>
 </template>
@@ -23,35 +25,36 @@ export default {
 
 <style lang="stylus">
 .sidebar
-  ul
-    padding 0
-    margin 0
-    list-style-type none
-  a
-    display inline-block
   .nav-links
-    display none
-    border-bottom 1px solid $borderColor
-    padding 0.5rem 0 0.75rem 0
-    a
-      font-weight 600
-    .nav-item, .repo-link
-      display block
-      line-height 1.25rem
-      font-size 1.1em
-      padding 0.5rem 0 0.5rem 1.5rem
-  & > .sidebar-links
-    border-top 2px dashed rgba(222,226,230,1)
-    padding 1.5rem 0
-    padding-left 1.5rem
-    height: calc(100%- 36rem)
+      display none
+      border-bottom 1px solid $borderColor
+      padding 0.5rem 0 0.75rem 0
+      a
+        font-weight 600
+      .nav-item, .repo-link
+        display block
+        line-height 1.25rem
+        font-size 1.1em
+        padding 0.5rem 0 0.5rem 1.5rem
+  .center
     overflow-y auto
-    & > li > a.sidebar-link
-      font-size 1.1em
-      line-height 1.7
-      font-weight bold
-    & > li:not(:first-child)
-      margin-top .75rem
+    height calc(100% - 4.5rem)
+    ul
+      padding 0
+      margin 0
+      list-style-type none
+    a
+      display inline-block
+    & > .sidebar-links
+      border-top 2px dashed rgba(222,226,230,1)
+      padding 1.5rem 0
+      overflow-y auto
+      & > li > a.sidebar-link
+        font-size 1.1em
+        line-height 1.7
+        font-weight bold
+      & > li:not(:first-child)
+        margin-top .75rem
     
 
 @media (max-width: $MQMobile)
