@@ -359,7 +359,6 @@ show、hide等都是Page页面的生命周期函数。
 
 ::: slot advertisement-top
   ![WX20190326-001811@2x](./assets/WX20190326-001811@2x.png)
-  ![WX20190326-001811@2x](./assets/WX20190326-001811@2x.png)
 :::
 
 

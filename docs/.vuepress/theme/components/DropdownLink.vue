@@ -8,10 +8,13 @@
       @click="toggle"
     >
       <span class="title">{{ item.text }}</span>
-      <span
+      <!-- <span
         class="arrow"
         :class="open ? 'down' : 'right'"
-      ></span>
+      ></span> -->
+      <img class="more" v-if="$site.themeConfig.more"
+           :src="$withBase($site.themeConfig.more)"
+      />
     </a>
 
     <DropdownTransition>
@@ -83,6 +86,15 @@ export default {
     display block
     &:hover
       border-color transparent
+    .more
+      position relative
+      width 32px
+      height 32px
+      top .55rem
+      left 2.9rem
+      border-radius 50%
+      box-shadow 0px 0px 14px 0px rgba(207,207,207,0.5)
+      cursor pointer
     .arrow
       vertical-align middle
       margin-top -3px
@@ -148,7 +160,7 @@ export default {
 
 @media (min-width: $MQMobile)
   .dropdown-wrapper
-    height 1.8rem
+    height 2.7rem
     &:hover .nav-dropdown
       // override the inline style.
       display block !important
