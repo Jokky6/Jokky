@@ -111,9 +111,9 @@ a.sidebar-link
     padding-bottom 0.25rem
     font-weight 400
     border-left none
-    line-height 34px
+    line-height 26px
     &.active
       font-weight 400
       background #d6e8fb
-      line-height 34px
+      line-height 26px
 </style>
