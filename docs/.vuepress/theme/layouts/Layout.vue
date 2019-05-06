@@ -77,7 +77,7 @@ export default {
     return {
       isSidebarOpen: false,
       isShowNav:true,
-      clientWidth:''
+      clientWidth:'',
     }
   },
 
@@ -144,6 +144,7 @@ export default {
   },
 
   methods: {
+
     toggleSidebar (to) {
       this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
     },
