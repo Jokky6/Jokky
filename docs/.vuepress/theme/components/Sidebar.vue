@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidebar">
+  <aside class="sidebar" :class="isShowSidebar ? false : 'hidden'"">
     <NavLinks/>
     <slot name="top"/>
     <div class="center">
@@ -19,7 +19,8 @@ export default {
 
   components: { SidebarLinks, NavLinks },
 
-  props: ['items']
+  props: ['items' , 'isShowSidebar'],
+
 }
 </script>
 

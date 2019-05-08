@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar">
+  <header class="navbar" :class="isShowSidebar ? false : 'no-sidebar'">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
 
     <AlgoliaSearchBox
@@ -28,7 +28,7 @@ import NavLinks from '@theme/components/NavLinks.vue'
 
 export default {
   components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },
-
+  props:['isShowSidebar'],
   data () {
     return {
       linksWrapMaxWidth: null

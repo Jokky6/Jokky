@@ -76,7 +76,7 @@ module.exports = {
             "tutorial/eleven"
           ]
         },
-      ]
+      ],
     }
   },
 }

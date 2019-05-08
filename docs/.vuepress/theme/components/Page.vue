@@ -1,6 +1,6 @@
 <template>
   <div class="page-container">
-    <main class="page">
+    <main class="page" :class="isShowSidebar ? false : 'not-sidebar'">
       <slot name="top"/>
         <div class="main-page">
           <Content/>
@@ -65,7 +65,7 @@
 <script>
 import { resolvePage, normalize, outboundRE, endingSlashRE } from '../util'
 export default {
-  props: ['sidebarItems'],
+  props: ['sidebarItems','isShowSidebar'],
   components: {},
   data (){
     return {
