@@ -1,6 +1,6 @@
 <template>
   <div class="page-container">
-    <main class="page" :class="isShowSidebar ? false : 'not-sidebar'">
+    <main class="page">
       <slot name="top"/>
         <div class="main-page">
           <Content/>
