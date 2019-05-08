@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidebar" :class="isShowSidebar ? false : 'hidden'"">
+  <aside class="sidebar" :class="isShowSidebar ? false : 'hidden'">
     <NavLinks/>
     <slot name="top"/>
     <div class="center">
