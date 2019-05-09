@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar" :class="isShowSidebar ? false : 'no-sidebar'">
+  <header class="navbar">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
 
     <AlgoliaSearchBox

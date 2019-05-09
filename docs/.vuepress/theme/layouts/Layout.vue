@@ -5,7 +5,7 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
   >
-    <Navbar :isShowSidebar="isShowSidebar" :class="pageClasses"   v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
+    <Navbar  :class="pageClasses"   v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
     <div
       class="sidebar-mask"
       @click="toggleSidebar(false)"
@@ -60,11 +60,6 @@
         slot="bottom"
       />
     </Page>
-
-    <img class="sidebar-btn" v-if="$site.themeConfig.more"
-           :src="$withBase($site.themeConfig.more)"
-           @click="showSidebar"
-    />
   </div>
 </template>
 
@@ -83,7 +78,6 @@ export default {
       isSidebarOpen: false,
       isShowNav:true,
       clientWidth:'',
-      isShowSidebar : true
     }
   },
 
@@ -209,17 +203,6 @@ export default {
   margin-top: 20px !important;
   padding-left: 50px !important;
   padding-right: 50px !important;
-}
-
-.sidebar-btn{
-  position: fixed;
-  width: 32px;
-  height: 32px;
-  top:100px;
-  right:33px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 14px 0px rgba(207,207,207,0.5);
-  cursor: pointer;
 }
 
 
