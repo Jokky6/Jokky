@@ -2,9 +2,9 @@
   <aside class="sidebar">
     <NavLinks/>
     <slot name="top"/>
-    <div class="center">
+    <div class="center" @scroll="handleScroll" ref="refCenter">
       <slot name="info"/>
-      <SidebarLinks :depth="0" :items="items"/>
+      <SidebarLinks :depth="0" :items="items" :class="isFixed?'reset':false"/>
     </div>
     <slot name="bottom"/>
   </aside>
@@ -19,7 +19,28 @@ export default {
 
   components: { SidebarLinks, NavLinks },
 
-  props: ['items' , 'isShowSidebar'],
+  props: ['items'],
+
+  data(){
+    return({
+      isFixed:false
+    })
+  },
+
+  methods:{
+    handleScroll(){
+      this.scrollTop = this.$refs.refCenter.scrollTop
+      console.log(this.$refs.refCenter.offsetTop)
+      if(this.scrollTop>185){
+        this.$emit("listen")
+        this.isFixed = true
+      }
+      if(this.scrollTop<=185){
+        this.$emit("destorylisten")
+        this.isFixed = false
+      }
+    }
+  }
 
 }
 </script>
@@ -46,8 +67,9 @@ export default {
       list-style-type none
     a
       display inline-block
+    & > .reset
+      padding-top 9.5rem !important
     & > .sidebar-links
-      border-top 2px dashed rgba(222,226,230,1)
       padding 1.5rem 0
       overflow-y auto
       & > li > a.sidebar-link

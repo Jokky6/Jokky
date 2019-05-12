@@ -13,7 +13,8 @@
     <Sidebar
       :items="sidebarItems"
       @toggle-sidebar="toggleSidebar"
-      :isShowSidebar = "isShowSidebar"
+      v-on:listen="Fixed"
+      v-on:destorylisten="NoFixed"
     >
       <slot
         name="sidebar-top"
@@ -35,7 +36,7 @@
       >
         <div class="info-container">
             <Content slot-key="author"/>
-            <Content slot-key="advertisement-top"/>
+            <Content slot-key="advertisement-top" :class="isFixed?'fixed':false"/>
         </div>
       </slot>
       <slot
@@ -49,7 +50,6 @@
     <Page
       v-else
       :sidebar-items="sidebarItems"
-      :isShowSidebar="isShowSidebar"
     >
       <slot
         name="page-top"
@@ -76,8 +76,8 @@ export default {
   data () {
     return {
       isSidebarOpen: false,
-      isShowNav:true,
       clientWidth:'',
+      isFixed:false,
     }
   },
 
@@ -144,9 +144,6 @@ export default {
   },
 
   methods: {
-    showSidebar(){
-      this.isShowSidebar = !this.isShowSidebar
-    },
 
     toggleSidebar (to) {
       this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
@@ -170,6 +167,13 @@ export default {
           this.toggleSidebar(false)
         }
       }
+    },
+
+    Fixed(){
+      this.isFixed = true
+    },
+    NoFixed(){
+      this.isFixed = false
     }
   }
 }
@@ -200,10 +204,20 @@ export default {
 }
 
 .advertisement-top{
-  margin-top: 20px !important;
+  position: static;
+  width: 200px;
+  height: 108.27px;
   padding-left: 50px !important;
   padding-right: 50px !important;
+  padding-bottom: 25px !important;
+  background: rgba(240,243,248,1);
+  border-bottom: 2px dashed rgba(222,226,230,1);
 }
+
+  .fixed{
+    position: fixed;
+    top:4.5rem;
+  }
 
 
  @media screen and (min-width: 1150px){
