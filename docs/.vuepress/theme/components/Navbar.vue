@@ -2,11 +2,11 @@
   <header class="navbar">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
 
-    <AlgoliaSearchBox
+     <AlgoliaSearchBox
         v-if="isAlgoliaSearch"
         :options="algolia"
-    />
-    <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false"/>
+      />
+      <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false"/>
 
     <div
       class="links"
@@ -14,14 +14,15 @@
         'max-width': linksWrapMaxWidth + 'px'
       } : {}"
     >
-      
+     
       <NavLinks class="can-hide"/>
+      <Logo class="can-show"/>
     </div>
   </header>
 </template>
 
 <script>
-import AlgoliaSearchBox from '@theme/components/AlgoliaSearchBox.vue'
+import AlgoliaSearchBox from '@AlgoliaSearchBox'
 import SearchBox from '@SearchBox'
 import SidebarButton from '@theme/components/SidebarButton.vue'
 import NavLinks from '@theme/components/NavLinks.vue'
@@ -76,6 +77,8 @@ $navbar-horizontal-padding = 1.5rem
 .navbar
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
+  background #F5F7FB
+  border-bottom 1px solid $borderColor
   a, span, img
     display inline-block
   .logo
@@ -86,30 +89,32 @@ $navbar-horizontal-padding = 1.5rem
   .site-name
     font-size 1.3rem
     font-weight 600
-    color #fff
+    color $textColor
     position relative
   .links
     padding-left 1.5rem
     box-sizing border-box
-    background-color $navBgColor
     white-space nowrap
     font-size 0.9rem
     position absolute
-    right 5rem
+    right $navbar-horizontal-padding
     top $navbar-vertical-padding
     display flex
     .search-box
       flex: 0 0 auto
       vertical-align top
-
+  .can-show
+    display none !important   
 
 @media (max-width: $MQMobile)
   .navbar
     padding-left 4rem
     .can-hide
       display none
+    .can-show
+      display block !important 
+      height 100% !important
+      background #F4F7FB !important
     .links
       padding-left 1.5rem
-    .more
-      display none
 </style>

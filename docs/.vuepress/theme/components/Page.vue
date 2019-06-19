@@ -1,21 +1,21 @@
 <template>
-  <div class="page-container">
-    <main class="page">
-      <slot name="top"/>
-        <div class="main-page">
-          <Content/>
-          <footer class="page-edit">
-            <div
-              class="edit-link"
-              v-if="editLink"
-            >
-            <a
-              :href="editLink"
-              target="_blank"
-              rel="noopener noreferrer"
-            >{{ editLinkText }}</a>
-            <OutboundLink/>
-        </div>
+  <main class="page">
+    <slot name="top"/>
+    <div class="main-page">
+    <Content/>
+
+    <footer class="page-edit">
+      <div
+        class="edit-link"
+        v-if="editLink"
+      >
+        <a
+          :href="editLink"
+          target="_blank"
+          rel="noopener noreferrer"
+        >{{ editLinkText }}</a>
+        <OutboundLink/>
+      </div>
 
       <div
         class="last-updated"
@@ -24,7 +24,7 @@
         <span class="prefix">{{ lastUpdatedText }}: </span>
         <span class="time">{{ lastUpdated }}</span>
       </div>
-      </footer>
+    </footer>
 
     <div class="page-nav" v-if="prev || next">
       <p class="inner">
@@ -55,24 +55,19 @@
           →
         </span>
       </p>
-     </div>
     </div>
+    
     <slot name="bottom"/>
+    </div>
   </main>
-  </div>
 </template>
 
 <script>
-import { resolvePage, normalize, outboundRE, endingSlashRE } from '../util'
+import { resolvePage, outboundRE, endingSlashRE } from '../util'
+
 export default {
   props: ['sidebarItems'],
-  components: {},
-  data (){
-    return {
-      viewComments: 'Comments',
-      
-    }
-  },
+
   computed: {
     lastUpdated () {
       return this.$page.lastUpdated
@@ -122,14 +117,8 @@ export default {
         docsRepo = repo
       } = this.$site.themeConfig
 
-      let path = normalize(this.$page.path)
-      if (endingSlashRE.test(path)) {
-        path += 'README.md'
-      } else {
-        path += '.md'
-      }
-      if (docsRepo && editLinks) {
-        return this.createEditLink(repo, docsRepo, docsDir, docsBranch, path)
+      if (docsRepo && editLinks && this.$page.relativePath) {
+        return this.createEditLink(repo, docsRepo, docsDir, docsBranch, this.$page.relativePath)
       }
     },
 
@@ -152,8 +141,8 @@ export default {
         return (
           base.replace(endingSlashRE, '')
            + `/src`
-           + `/${docsBranch}`
-           + (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '')
+           + `/${docsBranch}/`
+           + (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '')
            + path
            + `?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
         )
@@ -162,11 +151,11 @@ export default {
       const base = outboundRE.test(docsRepo)
         ? docsRepo
         : `https://github.com/${docsRepo}`
-
       return (
         base.replace(endingSlashRE, '')
-        + `/edit/${docsBranch}`
-        + (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '')
+        + `/edit`
+        + `/${docsBranch}/`
+        + (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '')
         + path
       )
     }
@@ -206,23 +195,23 @@ function flatten (items, res) {
 
 <style lang="stylus">
 @require '../styles/wrapper.styl'
-
 .main-page
   position relative
   top 8.5rem
   background #fff
   box-shadow:2px 2px 18px 0px rgba(199,204,215,0.5)
+  max-width 860px
+  margin 0 auto
 .page
-  padding-bottom 2rem
+  padding-bottom 8.5rem
   display block
+  background #f5f7fb
 
 .page-edit
-  max-width 1160px
   @extend $wrapper
-  padding-top 4rem
+  padding-top 1rem
   padding-bottom 1rem
   overflow auto
-  background: #fff
   .edit-link
     display inline-block
     a
@@ -241,9 +230,7 @@ function flatten (items, res) {
 .page-nav
   @extend $wrapper
   padding-top 1rem
-  padding-bottom 0
-  padding-bottom: 2rem
-  background #fff
+  padding-bottom 2.5rem
   .inner
     min-height 2rem
     margin-top 0

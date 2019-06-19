@@ -28,18 +28,17 @@
     </router-link>
 
     <p
-      v-show="false"
       v-else
       class="sidebar-heading"
       :class="{ open }"
       @click="$emit('toggle')"
     >
+      <span>{{ item.title }}</span>
       <span
         class="arrow"
         v-if="collapsable"
         :class="open ? 'down' : 'right'">
       </span>
-      <span>{{ item.title }}</span>
     </p>
 
     <DropdownTransition>
@@ -98,10 +97,12 @@ export default {
       border-left none
 
 .sidebar-heading
+  display none
   color $textColor
   transition color .15s ease
   cursor pointer
-  font-size 16px
+  font-size 1.1em
+  font-weight bold
   // text-transform uppercase
   padding 0.35rem 1.5rem 0.35rem 1.25rem
   width 100%
@@ -109,14 +110,11 @@ export default {
   margin 0
   border-left 0.25rem solid transparent
   &.open, &:hover
-    color #3683d6
-    background-color #e4f1ff
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    color inherit
   .arrow
     position relative
     top -0.12em
-    left 0em
+    left 0.5em
   &.clickable
     &.active
       font-weight 600

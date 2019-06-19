@@ -1,6 +1,6 @@
 {
   "name": "@vuepress/theme-default",
-  "version": "1.0.0-alpha.42",
+  "version": "1.0.0-alpha.48",
   "description": "Default theme for VuePress",
   "main": "index.js",
   "publishConfig": {
@@ -17,7 +17,7 @@
     "vuepress",
     "generator"
   ],
-  "author": "Jokky",
+  "author": "Evan You",
   "maintainers": [
     {
       "name": "ULIVZ",
@@ -30,13 +30,13 @@
   },
   "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/theme-default#readme",
   "dependencies": {
-    "@vuepress/plugin-active-header-links": "^1.0.0-alpha.42",
-    "@vuepress/plugin-container": "^1.0.0-alpha.42",
-    "@vuepress/plugin-nprogress": "^1.0.0-alpha.42",
-    "@vuepress/plugin-search": "^1.0.0-alpha.42",
+    "@vuepress/plugin-active-header-links": "^1.0.0-alpha.48",
+    "@vuepress/plugin-nprogress": "^1.0.0-alpha.48",
+    "@vuepress/plugin-search": "^1.0.0-alpha.48",
     "docsearch.js": "^2.5.2",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2"
+    "stylus-loader": "^3.0.2",
+    "vuepress-plugin-container": "^2.0.0"
   },
-  "gitHead": "f4ce75f73e4d5b64ff552501eada396b0cec5679"
+  "gitHead": "ac7dca29f45cf893a6a6b3f35399c5c99b047da9"
 }

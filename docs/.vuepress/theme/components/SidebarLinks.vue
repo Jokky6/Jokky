@@ -13,6 +13,7 @@
         @toggle="toggleGroup(i)"
       />
       <SidebarLink
+        
         v-else
         :sidebarDepth="sidebarDepth"
         :item="item"
@@ -65,10 +66,12 @@ export default {
     },
 
     toggleGroup (index) {
+      console.log(4444)
       this.openGroupIndex = index === this.openGroupIndex ? -1 : index
     },
 
     isActive (page) {
+      console.log(4444)
       return isActive(this.$route, page.regularPath)
     }
   }

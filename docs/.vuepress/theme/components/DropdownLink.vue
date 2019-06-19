@@ -8,13 +8,10 @@
       @click="toggle"
     >
       <span class="title">{{ item.text }}</span>
-      <!-- <span
+      <span
         class="arrow"
         :class="open ? 'down' : 'right'"
-      ></span> -->
-      <img class="more" v-if="$site.themeConfig.more"
-           :src="$withBase($site.themeConfig.more)"
-      />
+      ></span>
     </a>
 
     <DropdownTransition>
@@ -86,23 +83,15 @@ export default {
     display block
     &:hover
       border-color transparent
-    .more
-      position relative
-      width 32px
-      height 32px
-      top .55rem
-      left 2.9rem
-      border-radius 50%
-      box-shadow 0px 0px 14px 0px rgba(207,207,207,0.5)
-      cursor pointer
     .arrow
       vertical-align middle
-      margin-top -3px
+      margin-top -1px
       margin-left 0.4rem
   .nav-dropdown
     .dropdown-item
       color inherit
       line-height 1.7rem
+      list-style none
       h4
         margin 0.45rem 0 0
         border-top 1px solid #eee
@@ -123,7 +112,7 @@ export default {
         &:hover
           color $accentColor
         &.router-link-active
-          color $wrapperText
+          color $accentColor
           &::after
             content ""
             width 0
@@ -142,7 +131,7 @@ export default {
 @media (max-width: $MQMobile)
   .dropdown-wrapper
     &.open .dropdown-title
-      margin-bottom 0.5rem
+      margin-bottom 0.5remy
     .nav-dropdown
       transition height .1s ease-out
       overflow hidden
@@ -160,14 +149,15 @@ export default {
 
 @media (min-width: $MQMobile)
   .dropdown-wrapper
-    height 2.7rem
+    height 1.8rem
     &:hover .nav-dropdown
       // override the inline style.
       display block !important
     .dropdown-title .arrow
       // make the arrow always down at desktop
-      border-right 1px solid $arrowBgColor
-      border-top 1px solid $arrowBgColor
+      border-left 4px solid transparent
+      border-right 4px solid transparent
+      border-top 6px solid $arrowBgColor
       border-bottom 0
     .nav-dropdown
       display none
@@ -175,16 +165,38 @@ export default {
       height auto !important
       box-sizing border-box;
       max-height calc(100vh - 2.7rem)
-      overflow-y auto
+      overflow-y visible
       position absolute
-      top 100%
+      top 130%
       right 0
-      background-color $DropdownBgColor
-      padding 0.6rem 0
-      border 1px solid #ddd
+      background-color #fff
+      padding 0.3rem 0
+      filter drop-shadow(0 0 1px rgba(22,37,87,0.2))
+      border-radius 4px 0px 0px 0px
       border-bottom-color #ccc
       text-align left
       border-radius 0.25rem
       white-space nowrap
       margin 0
+      &::before
+        content ''
+        position absolute
+        border 10px solid transparent
+        display block
+        width 0px
+        height 0px
+        top -21px
+        right 20%
+        transform translateX(-50%)
+      &::after
+        content ''
+        position absolute
+        border 10px solid transparent
+        border-bottom-color #fff
+        display block
+        width 0px
+        height 0px
+        top -20px
+        right 20%
+        transform translateX(-50%)
 </style>

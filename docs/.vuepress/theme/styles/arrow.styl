@@ -2,25 +2,20 @@
 
 .arrow
   display inline-block
-  width 6px
-  height 6px
+  width 0
+  height 0
   &.up
     border-left 4px solid transparent
     border-right 4px solid transparent
     border-bottom 6px solid $arrowBgColor
   &.down
-    border-top 1px solid #3683D6
-    border-right 1px solid #3683D6
-    transition all 0.3s
-    transform rotate(-45deg)
-    margin-bottom -2px
-    margin-left 3px
+    border-left 4px solid transparent
+    border-right 4px solid transparent
+    border-top 6px solid $arrowBgColor
   &.right
-    border-top: 1px solid #656565
-    border-right: 1px solid #656565
-    transform: rotate(135deg)
-    margin-bottom 2px
-    margin-left 3px
+    border-top 4px solid transparent
+    border-bottom 4px solid transparent
+    border-left 6px solid $arrowBgColor
   &.left
     border-top 4px solid transparent
     border-bottom 4px solid transparent

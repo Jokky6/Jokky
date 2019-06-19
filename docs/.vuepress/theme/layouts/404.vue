@@ -3,7 +3,7 @@
     <div class="content">
       <h1>404</h1>
       <blockquote>{{ getMsg() }}</blockquote>
-      <router-link to="/">返回主页...</router-link>
+      <router-link to="/">Take me home.</router-link>
     </div>
   </div>
 </template>
@@ -24,5 +24,3 @@ export default {
   }
 }
 </script>
-
-<style src="../styles/theme.styl" lang="stylus"></style>

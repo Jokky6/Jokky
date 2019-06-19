@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # This is Lin-cms Pages
 
 ## 第一章

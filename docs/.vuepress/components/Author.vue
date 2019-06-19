@@ -5,7 +5,6 @@
             <p class="name" :name="name">{{name}}</p>
             <span class="job" :job="job">{{job}}</span>
         </div>
-        <p class="book-name" :title="title">{{title}}</p>
     </div>
 </template>
 
@@ -37,7 +36,6 @@ export default {
         justify-content center
         align-items center
         .avatar
-            
             width 88px
             height 88px
             border-radius 50%
@@ -50,10 +48,16 @@ export default {
                 margin-bottom 0
                 text-align center
                 line-height 22px
+                overflow hidden
+                text-overflow ellipsis
+                white-space nowrap
             span 
                 color #999
                 font-size 12px
                 line-height 17px
+                overflow hidden
+                text-overflow ellipsis
+                white-space nowrap
         .book-name
             font-size 14px
             line-height 20px
@@ -64,7 +68,10 @@ export default {
             margin-bottom 0 !important
             cursor pointer
         
-            
+@media (max-width: $MQMobile)
+  .author-container
+    width $sidebarWidth * 0.82
+    margin-top 10px !important
 </style>
 
 

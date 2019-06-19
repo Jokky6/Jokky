@@ -10,11 +10,11 @@
 .sidebar-button
   cursor pointer
   display none
-  width 50px
-  height 50px
+  width 1.25rem
+  height 1.25rem
   position absolute
   padding 0.6rem
-  top 0.6rem
+  top 1rem
   left 1rem
   .icon
     display block
@@ -24,4 +24,5 @@
 @media (max-width: $MQMobile)
   .sidebar-button
     display block
+    width 50px
 </style>

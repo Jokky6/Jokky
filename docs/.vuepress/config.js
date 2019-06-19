@@ -1,12 +1,8 @@
-const path = require('path')
-const moment = require('moment')
-const container = require('markdown-it-container')
-
 module.exports = {
-  base:'/books/',
+  base: '/books/',
   dest: 'books',
-  port:8000,
-  host:'0.0.0.0',
+  port: 8000,
+  host: '0.0.0.0',
   title: "Lin Books",
   description: 'This is Lin books',
   head: [
@@ -25,59 +21,62 @@ module.exports = {
   },
   evergreen: true,
   activeHeaderLinks: true,
-  plugins: [
-    ['@vuepress/back-to-top', true],
-    ['@vuepress/container', true],
-    ['@vuepress/nprogress', true],
-    ['@vuepress/active-header-links', true],
-    ['@vuepress/register-components', true],
-    ['@vuepress/pwa', {
-      serviceWorker: true,
-      updatePopup: true
-    }],
-    ['@vuepress/search', {
-      searchMaxSuggestions: 10
-    }],
-    ['@vuepress/google-analytics', {
-      ga: 'UA-131334453-1'
-    }],
-    [
-      '@vuepress/last-updated',
-      {
-        transformer: (timestamp, lang) => {
-          // 不要忘了安装 moment
-          const moment = require('moment')
-          moment.locale(lang)
-          return moment(timestamp).fromNow()
-        }
-      }
-    ]
-  ],
   themeConfig: {
     repo: undefined,
-    label: '简体中文',
-    selectText: '选择语言',
-    more:'/more.png',
-    avatar:'/hero.png',
+    editLinks: false,
     leftLogo:'/left-logo.png',
-    search:true,
-    lastUpdated: "上次更新",
-    editLinks:false,
-    nav: require('./nav/index'),
-    navbar: true,
-    displayAllHeaders: false,
+    lastUpdated: '最后更新',
     activeHeaderLinks:true,
+    sidebarDepth: 2,
+    // 添加导航栏
+    nav: [
+      { text: '主页', link: '/' },
+      { text: 'lin-ui', link: '/lin/lin-ui/' },
+      {
+        text: '更多专栏',
+        items: [
+          {
+            text: 'koa2电子书',
+            link: '/lin/koa2/'
+          },
+        ]
+      },
+    ],
+    // 为以下路由添加侧边栏
     sidebar: {
+      '/lin/koa2/':[
+        {
+          title:'koa2电子书',
+          collapsable: true,
+          children: [
+            '启动koa服务',
+            '构建前端页面',
+            '搭建后端环境',
+            '登录功能',
+            '实现员工的增删改查',
+            '项目部署',
+            '写在最后'
+          ]
+        }
+      ],
       "/lin/lin-ui/": [
         {
-          title: "小程序入门与入门",
+          title: "Lin-ui",
+          collapsable: true,
           children: [
             "/lin/lin-ui/tutorial/",
-            "tutorial/eleven"
+            'tutorial/seven',
+            'tutorial/eight',
+            'tutorial/nine',
+            'tutorial/eleven'
           ]
         },
-      ],
+      ]  
     }
-  },
+  }
 }
-
+function koaSidebarConfig(title) {
+  return [
+    
+  ]
+}
