@@ -109,7 +109,6 @@ export default {
   mounted() {
     this.$router.afterEach(() => {
       if (this.isScroll || this.isMobileClient()) {
-        this.isSidebarOpen = true;
       } else {
         this.isSidebarOpen = false;
       }
